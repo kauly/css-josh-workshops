@@ -1,12 +1,89 @@
-* {
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+:root {
+  --space-one: 8px;
+  --space-two: 16px;
+  --space-three: 24px;
+  --space-four: 32px;
+  --space-five: 48px;
+  --space-six: 64px;
+  --space-seven: 96px;
+  --space-eight: 128px;
+  --font-sm: 1rem;
+  --font-md: 1.25rem;
+  --font-lg: 1.5rem;
+  --font-xl: 2rem;
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+  --color-black: hsl(0deg, 0%, 0%);
+  --color-darker: hsl(0deg, 0%, 10%);
+  --color-dark: hsl(0deg, 0%, 30%);
+  --color-medium: hsl(0deg, 0%, 40%);
+  --color-light: hsl(0deg, 0%, 60%);
+  --color-white: hsl(0deg, 0%, 100%);
 }
 
-html,
-body {
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 /* Add styles here! */
+
+main {
+  border-top: var(--space-one) solid var(--color-medium);
+  background-color: var(--color-light);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: var(--space-six);
+  padding-bottom: var(--space-four);
+}
+
+.intro-chunk {
+  padding-left: var(--space-two);
+  padding-right: var(--space-two);
+}
+
+p {
+  font-size: var(--font-lg);
+  color: var(--color-black);
+  line-height: var(--space-four);
+  padding-bottom: var(--space-two);
+}
+
+.intro-chunk strong {
+  color: var(--color-primary);
+}
+
+.title {
+  padding-bottom: var(--space-four);
+  font-size: var(--font-xl);
+  color: var(--color-darker);
+}
+
+.indented-heading {
+  padding: var(--space-two) var(--space-four);
+  font-size: var(--font-lg);
+  color: var(--color-darker);
+  background-color: var(--color-secondary-light);
+  border-bottom: var(--space-one) solid var(--color-secondary-dark);
+  display: inline-block;
+  margin-left: -32px;
+  margin-bottom: var(--space-three);
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: var(--space-two);
+  padding-top: var(--space-one);
+  border-bottom: var(--space-one) solid var(--color-medium);
+}
